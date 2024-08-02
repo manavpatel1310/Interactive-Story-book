@@ -1,0 +1,139 @@
+{
+    "start": {
+        "text": "{name}, you are in a dark forest. There is a path to the left and a path to the right. You also see a sign pointing forward.",
+        "choices": {
+            "left": "go_left",
+            "right": "go_right",
+            "forward": "go_forward"
+        },
+        "image": "static/images/forest.png",
+        "sound": "static/sounds/Magic Forest.mp3"
+    },
+    "go_left": {
+        "text": "{name}, you find a hidden treasure chest! Do you open it or leave it?",
+        "choices": {
+            "open": "open_chest",
+            "leave": "leave_chest"
+        },
+        "image": "static/images/gold.jpg",
+        "sound": "static/sounds/treasure.mp3"
+    },
+    "go_right": {
+        "text": "You encounter a wild animal! Do you fight it or run away?",
+        "choices": {
+            "fight": "fight_animal",
+            "run": "run_away"
+        },
+        "image": "static/images/animal.jpg",
+        "sound": "static/sounds/animal.mp3"
+    },
+    "go_forward": {
+        "text": "You come across a mysterious old man. He offers you a choice of three potions: red, blue, and green.",
+        "choices": {
+            "red": "red_potion",
+            "blue": "blue_potion",
+            "green": "green_potion"
+        },
+        "image": "static/images/old_man.jpg",
+        "sound": "static/sounds/oldman.mp3"
+    },
+    "open_chest": {
+        "text": "The chest is filled with gold! You are rich! But you hear footsteps approaching...",
+        "choices": {
+            "hide": "hide_with_gold",
+            "flee": "flee_with_gold"
+        },
+        "image": "static/images/gold.jpg",
+        "sound": "static/sounds/gold.mp3"
+    },
+    "leave_chest": {
+        "text": "You walk away, leaving the treasure behind. You find a hidden path leading to a village.",
+        "choices": {
+            "enter": "enter_village",
+            "avoid": "avoid_village"
+        },
+        "image": "static/images/village.jpg",
+        "sound": "static/sounds/village.mp3"
+    },
+    "fight_animal": {
+        "text": "You bravely fight the animal and win! You find a cave nearby.",
+        "choices": {
+            "enter_cave": "enter_cave",
+            "move_on": "move_on_from_cave"
+        },
+        "image": "static/images/fight_bandits.jpg",
+        "sound": "static/sounds/animal_fight.mp3"
+    },
+    "run_away": {
+        "text": "You run away safely and find a river. Do you follow it upstream or downstream?",
+        "choices": {
+            "upstream": "follow_upstream",
+            "downstream": "follow_downstream"
+        },
+        "image": "static/images/river.jpg",
+        "sound": "static/sounds/river.mp3"
+    },
+    "red_potion": {
+        "text": "You drink the red potion and feel a surge of strength. You continue your journey with newfound energy.",
+        "choices": {
+            "explore": "explore_forest",
+            "rest": "rest_nearby"
+        },
+        "image": "static/images/red_potion.jpg",
+        "sound": "static/sounds/poition.mp3"
+    },
+    "blue_potion": {
+        "text": "You drink the blue potion and feel a sense of calm and clarity. You see a hidden path illuminated.",
+        "choices": {
+            "follow_path": "follow_hidden_path",
+            "ignore_path": "ignore_hidden_path"
+        },
+        "image": "static/images/blue_potion.jpg",
+        "sound": "static/sounds/poition.mp3"
+    },
+    "green_potion": {
+        "text": "You drink the green potion and feel dizzy. You fall asleep and wake up in a different place.",
+        "choices": {
+            "look_around": "look_around_new_place",
+            "stay_put": "stay_put"
+        },
+        "image": "static/images/green_potion.jpg",
+        "sound": "static/sounds/poition.mp3"
+    },
+    "hide_with_gold": {
+        "text": "You hide behind the chest as a group of bandits arrive. They leave without noticing you.",
+        "choices": {
+            "sneak_away": "sneak_away_from_bandits",
+            "stay_hidden": "stay_hidden"
+        },
+        "image": "static/images/hide_with_gold.jpg",
+        "sound": "static/sounds/treasure.mp3"
+    },
+    "flee_with_gold": {
+        "text": "You grab as much gold as you can and run. You find a marketplace where you can trade the gold.",
+        "choices": {
+            "trade_gold": "trade_gold",
+            "keep_running": "keep_running"
+        },
+        "image": "static/images/marketplace.jpg",
+        "sound": "static/sounds/market.mp3"
+    },
+    "enter_village": {
+        "text": "You enter the village and find it bustling with activity. You see an inn and a marketplace.",
+        "choices": {
+            "visit_inn": "visit_inn",
+            "explore_marketplace": "explore_marketplace"
+        },
+        "image": "static/images/village.jpg",
+        "sound": "static/sounds/village.mp3"
+    },
+    "avoid_village": {
+        "text": "You avoid the village and continue your journey. You find a serene lake.",
+        "choices": {
+            "rest_at_lake": "rest_at_lake",
+            "keep_moving": "keep_moving"
+        },
+        "image": "static/images/lake.jpg",
+        "sound": "static/sounds/lake.mp3"
+    }
+}
